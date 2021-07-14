@@ -56,7 +56,7 @@ import LinearGradient from 'react-native-linear-gradient';
                     <Button 
                       style={styles.marginBottom}
                       onPress={() => console.log('Pressed')}
-                      theme={{ colors: { primary: '#fff'}}}>
+                      theme={{ colors: { primary: '#000'}}}>
                         Esqueci a Senha
                     </Button>
                     <Text style={styles.textSmall}>
