@@ -9,8 +9,8 @@ const App = () => {
     ...DefaultTheme,
     colors: {
       ...DefaultTheme.colors,
-      primary: "#D2691E",
-      background: "#D2691E",
+      primary: "#222",
+      background: "#A95534",
       placeholder: "#fff",
       text: "#fff",
     },
@@ -19,7 +19,7 @@ const App = () => {
   return (
     <PaperProvider theme={theme}>
       {/*Modificando a cor da barra de Status do Android*/}
-        <StatusBar backgroundColor="#CD853F" />
+        <StatusBar backgroundColor="#222" />
         <Routes/>
     </PaperProvider>
   );

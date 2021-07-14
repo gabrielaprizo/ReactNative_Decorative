@@ -1,38 +1,35 @@
 import React, { useState } from 'react';
-import { ScrollView, ImageBackground, View, Text } from 'react-native';
+import { ScrollView, Image, ImageBackground, View, Text } from 'react-native';
 import styles from './styles';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextInput, Button } from 'react-native-paper';
 import LinearGradient from 'react-native-linear-gradient';
 
+const Login  = ({navigation}) => {
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
 
-    const Login  = ({navigation}) => {
-        const [email, setEmail] = useState('');
-        const [senha, setSenha] = useState('');
-
-        async function logar() {
-            const usuario = {
-              email, senha
-            }
-            await AsyncStorage.setItem("usuario", JSON.stringify(usuario));
-          }
+    async function logar() {
+        const usuario = {
+          email, senha
+        }
+        await AsyncStorage.setItem("usuario", JSON.stringify(usuario));
+    }
 
     return (
-        <ScrollView style={styles.container}>
-            <ImageBackground style={styles.capa}
-                source={require('../../assets/imgs/capalogin.png')}>
-                    {/*<Image  
-                    style={styles.logo}
-                    resizeMode='contain'
-                    source={{uri: 'https://i.imgur.com/4xN7wB8.png'}} />*/}
-                    <LinearGradient 
-                        style={styles.gradient} 
-                        colors={['rgba(0,0,0,1)', 'rgba(0,0,0,1)']} />
-            </ImageBackground>
+            <ScrollView style={styles.container}>
+                <Image  
+                style={styles.logo}
+                resizeMode='contain'
+                source={require('../../assets/imgs/Decorative-logo-grande-sem-fundo.png')} />
+                <LinearGradient 
+                    style={styles.gradient} 
+                    colors={['rgba(0,0,0,1)', 'rgba(0,0,0,1)']} 
+                />
                 <View>
                     <TextInput
                         mode="flat"
-                        label="Email"
+                        label="Email ou número de Telefone"
                         style={styles.marginBottom}
                         value={email}
                         onChangeText={text => setEmail(text)}
@@ -64,6 +61,7 @@ import LinearGradient from 'react-native-linear-gradient';
                     </Text>
                 </View>
         </ScrollView>
+
     )
 };
 
