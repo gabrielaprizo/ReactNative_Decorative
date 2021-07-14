@@ -1,18 +1,26 @@
 import React, { useState } from 'react';
 import { ScrollView, ImageBackground, View, Text } from 'react-native';
 import styles from './styles';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextInput, Button } from 'react-native-paper';
 import LinearGradient from 'react-native-linear-gradient';
-const Login = () => {
-    const [credenciais, setCredenciais] = useState({
-        emais: '',
-        senha: '',
-    })
+
+
+    const Login  = ({navigation}) => {
+        const [email, setEmail] = useState('');
+        const [senha, setSenha] = useState('');
+
+        async function logar() {
+            const usuario = {
+              email, senha
+            }
+            await AsyncStorage.setItem("usuario", JSON.stringify(usuario));
+          }
 
     return (
         <ScrollView style={styles.container}>
             <ImageBackground style={styles.capa}
-                source={require('../../src/assets/imgs/capalogin.png')}>
+                source={require('../../assets/imgs/capalogin.png')}>
                     {/*<Image  
                     style={styles.logo}
                     resizeMode='contain'
@@ -24,23 +32,25 @@ const Login = () => {
                 <View>
                     <TextInput
                         mode="flat"
-                        label="Email ou número de Telefone"
+                        label="Email"
                         style={styles.marginBottom}
-                        value={credenciais.email}
-                        onChangeText={text => setCredenciais({...credenciais, email: text})}
+                        value={email}
+                        onChangeText={text => setEmail(text)}
                     />
                     <TextInput
                         label="Senha"
                         mode="flat"
                         secureTextEntry
                         style={styles.marginBottom}
-                        value={credenciais.senha}
-                        onChangeText={text => setCredenciais({...credenciais, senha: text})}
+                        value={senha}
+                        onChangeText={text => setSenha(text)}
                     />
                     <Button 
                       mode="contained"
                       style={styles.marginBottom}
-                      onPress={() => console.log('Pressed')}>
+                      onPress={(logar) => {
+                        navigation.navigate('Home')
+                    }}>
                         Entrar
                     </Button>
                     <Button 

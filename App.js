@@ -1,7 +1,7 @@
 import React from 'react';
-import Login from './pages/login';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
-import { StatusBar, Text } from 'react-native';
+import Routes from './routes';
+import { StatusBar} from 'react-native';
 
 const App = () => {
 
@@ -20,7 +20,7 @@ const App = () => {
     <PaperProvider theme={theme}>
       {/*Modificando a cor da barra de Status do Android*/}
         <StatusBar backgroundColor="#CD853F" />
-        <Login />
+        <Routes/>
     </PaperProvider>
   );
 };
