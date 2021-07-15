@@ -69,14 +69,14 @@ const Home = () => {
                 </Products>
                 <Products img={require('../../assets/imgs/jogojantar.png')}
                 cost="R$3.689,00" onClick={() => alert("Testando")}>
-                    Conjunto para sala de jantar
+                    Conjunto Elegance
                 </Products>
                 </View>  
 
                 <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/cadeira3.png')}
                 cost="R$1.599,00" onClick={() => alert("Testando")}>
-                    Conjunto mesa com 2 cadeiras
+                    Conjunto Life
                 </Products>
                 <Products img={require('../../assets/imgs/mesinhalateral.png')}
                 cost="R$479,00" onClick={() => alert("Testando")}>
@@ -91,7 +91,7 @@ const Home = () => {
                 </Products>
                 <Products img={require('../../assets/imgs/mesacentro.png')}
                 cost="R$799,00" onClick={() => alert("Testando")}>
-                    Mesa de centro quadrada
+                    Mesa de centro Flower
                 </Products>
                 </View>
         </ScrollView>

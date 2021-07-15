@@ -5,6 +5,8 @@ import Profile from './src/screens/Profile';
 import Cart from './src/screens/Cart';
 import Contact from './src/screens/Contact';
 import Detail from './src/screens/Detail';
+import Stock from './src/screens/Stock';
+
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -12,7 +14,6 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { detailed } from 'yargs-parser';
 import Products from './src/components/Products';
-
 
 const Stack = createStackNavigator();
 const Tab =  createMaterialBottomTabNavigator()
@@ -36,32 +37,12 @@ const HomeTabs = () =>{
             }}
             />
             <Tab.Screen 
-            name='Detail' 
-            component={Detail}
-            options={{
-                tabBarLabel:'Produtos',
-                tabBarIcon: ({color}) => (
-                    <Icon name='view-list-outline' color={color} size={22} />
-                )
-            }}
-            />
-            <Tab.Screen 
             name='Cart' 
             component={Cart}
             options={{
-                tabBarLabel:'Carrinho',
+                tabBarLabel:'Pedidos',
                 tabBarIcon: ({color}) => (
                     <Icon name='cart-outline' color={color} size={22} />
-                )
-            }}
-            />
-            <Tab.Screen 
-            name='Profile' 
-            component={Profile}
-            options={{
-                tabBarLabel:'Perfil',
-                tabBarIcon: ({color}) => (
-                    <Icon name='account-outline' color={color} size={22} />
                 )
             }}
             />
@@ -75,6 +56,17 @@ const HomeTabs = () =>{
                 )
             }}
             />
+            
+            <Tab.Screen 
+            name='Stock' 
+            component={Login}
+            options={{
+                tabBarLabel:'Estoque',
+                tabBarIcon: ({color}) => (
+                    <Icon name='account-outline' color={color} size={22} />
+                )
+            }}
+            />
         </Tab.Navigator>
     );
 }
@@ -82,11 +74,12 @@ const HomeTabs = () =>{
 const Routes = () => {
     return(
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='Login'>
-                <Stack.Screen 
+            <Stack.Navigator initialRouteName='Home'>
+
+            <Stack.Screen 
                 options={{headerShown: false}} 
                 name='Login' 
-                component={Login}/>
+                component={Stock}/>
 
                 <Stack.Screen 
                 options={{headerShown: false}} 
@@ -95,18 +88,24 @@ const Routes = () => {
                 
                 <Stack.Screen 
                 options={{headerShown: false}} 
-                name='Perfil' 
+                name='Profile' 
                 component={Profile}/>
                 
                 <Stack.Screen 
                 options={{headerShown: false}} 
-                name='Carrinho' 
+                name='Cart' 
                 component={Cart}/>
                 
                 <Stack.Screen 
                 options={{headerShown: false}} 
-                name='Produtos' 
+                name='Detail' 
                 component={Detail}/>
+                
+                <Stack.Screen 
+                options={{headerShown: false}} 
+                name='Stock' 
+                component={Stock}/>
+
             </Stack.Navigator>
         
         </NavigationContainer>

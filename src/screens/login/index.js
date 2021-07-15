@@ -4,6 +4,8 @@ import styles from './styles';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextInput, Button } from 'react-native-paper';
 import LinearGradient from 'react-native-linear-gradient';
+import Stock from '../Stock';
+
 
 const Login  = ({navigation}) => {
     const [email, setEmail] = useState('');

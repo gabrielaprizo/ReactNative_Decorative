@@ -19,20 +19,31 @@ const styles = StyleSheet.create({
 
     textContainer: {
         flexDirection: 'column',
-        marginVertical: '5%',
+        marginVertical: '3%',
         marginHorizontal: '5%'
     },
 
     contatosText: {
+        color: '#222',
         fontFamily: 'sans-serif',
-        fontSize: 20,
+        fontSize: 25,
         textAlign: 'center',
-        marginVertical:'3%'    
     },
-
+    textSubTitle: {
+        color: '#222',
+        textAlign:'center',
+        fontSize: 20,
+    },
+    textDescription: {
+        color: '#CD853F',
+        fontSize: 14,
+        textAlign: 'center',
+    },
     line: {
         borderBottomColor: '#CD853F',
         borderBottomWidth: 2
-    }
+    },
+    buttomFAB: {
+    },
 });
 export default styles;
