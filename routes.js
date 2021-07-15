@@ -36,7 +36,7 @@ const HomeTabs = () =>{
             }}
             />
             <Tab.Screen 
-            name='Produtos' 
+            name='Detail' 
             component={Detail}
             options={{
                 tabBarLabel:'Produtos',
@@ -46,7 +46,7 @@ const HomeTabs = () =>{
             }}
             />
             <Tab.Screen 
-            name='Carrinho' 
+            name='Cart' 
             component={Cart}
             options={{
                 tabBarLabel:'Carrinho',
@@ -56,7 +56,7 @@ const HomeTabs = () =>{
             }}
             />
             <Tab.Screen 
-            name='Perfil' 
+            name='Profile' 
             component={Profile}
             options={{
                 tabBarLabel:'Perfil',
@@ -66,7 +66,7 @@ const HomeTabs = () =>{
             }}
             />
             <Tab.Screen 
-            name='Contatos' 
+            name='Contact' 
             component={Contact}
             options={{
                 tabBarLabel:'Contatos',
