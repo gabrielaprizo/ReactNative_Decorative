@@ -42,7 +42,6 @@ const Login  = ({navigation}) => {
                         value={senha}
                         onChangeText={text => setSenha(text)}
                     />
-                    
                     <Button 
                       mode="contained"
                       style={styles.entrarBottom}
