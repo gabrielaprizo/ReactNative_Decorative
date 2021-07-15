@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: "#222",
         flex: 1,
-        backgroundColor: '#FFFAF0',
+        backgroundColor: '#222',
       },
     bgDark: {
         backgroundColor: '#CD853F',
@@ -25,8 +25,17 @@ const styles = StyleSheet.create({
         marginBottom: {
             marginBottom: 20,
         },
+        buttom: {
+            justifyContent: "center",
+            alignItems: "center",
+        },
+        text: {
+            alignSelf: "center",
+            color: "#fff",
+            fontSize: 23,
+        },
         textSmall: {
-            color: '#000',
+            color: '#fff',
             textAlign: 'center',
             marginTop: 0,
             marginBottom: 50,

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ScrollView, Image, ImageBackground, View, Text } from 'react-native';
+import { ScrollView, Image, ImageBackground, View, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextInput, Button } from 'react-native-paper';
@@ -42,9 +42,10 @@ const Login  = ({navigation}) => {
                         value={senha}
                         onChangeText={text => setSenha(text)}
                     />
+                    
                     <Button 
                       mode="contained"
-                      style={styles.marginBottom}
+                      style={styles.entrarBottom}
                       onPress={(logar) => {
                         navigation.navigate('Home')
                     }}>
@@ -53,7 +54,7 @@ const Login  = ({navigation}) => {
                     <Button 
                       style={styles.marginBottom}
                       onPress={() => console.log('Pressed')}
-                      theme={{ colors: { primary: '#000'}}}>
+                      theme={{ colors: { primary: '#fff'}}}>
                         Esqueci a Senha
                     </Button>
                     <Text style={styles.textSmall}>
