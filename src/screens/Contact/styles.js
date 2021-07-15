@@ -43,7 +43,5 @@ const styles = StyleSheet.create({
         borderBottomColor: '#CD853F',
         borderBottomWidth: 2
     },
-    buttomFAB: {
-    },
 });
 export default styles;
