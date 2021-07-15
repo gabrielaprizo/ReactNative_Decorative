@@ -33,24 +33,21 @@ const Contact = () => {
 
             <Provider>
                 <Portal>
-                    <FAB.Group fabStyle={{backgroundColor: "#A95534"}}
+                    <FAB.Group fabStyle={{backgroundColor: "#222"}}
                         open={open}
                         icon={open ? 'cellphone' : 'cellphone'}
                         actions={[
-                            { icon: 'plus', onPress: () => console.log('Pressed add') },
+                            { icon: 'gmail', onPress: () => Linking.openURL('https://www.google.com/intl/pt/gmail/about/#') },
                             {
                             icon: 'whatsapp',
-                            label: 'Whatsapp',
                             onPress: () => Linking.openURL('https://www.whatsapp.com/?lang=pt_br'),
                             },
                             {
                             icon: 'facebook',
-                            label: 'Facebook',
                             onPress: () => Linking.openURL('https://www.facebook.com/'),
                             },
                             {
                             icon: 'instagram',
-                            label: 'Instagram',
                             onPress: () => Linking.openURL('https://www.instagram.com/'),
                             small: false,
                             },

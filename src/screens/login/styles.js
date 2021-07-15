@@ -40,6 +40,9 @@ const styles = StyleSheet.create({
             marginTop: 0,
             marginBottom: 50,
         },
+        entrarBottom: {
+            color:"#fff",
+        },
 });
 
 export default styles;

@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { TextInput } from 'react-native-paper';
 import { TouchableOpacity, View, Text } from 'react-native';
-import styles from './style';
+import styles from './styles';
 
 
 export default function Formulario() {
@@ -20,7 +20,7 @@ export default function Formulario() {
         style={styles.button}
         onPress={onPress}
       >
-        <Text style={styles.text}>Enviar 
+        <Text style={{color: "#fff", fontSize: 20}}>Enviar 
         </Text>
       </TouchableOpacity>
       </View>

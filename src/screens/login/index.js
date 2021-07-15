@@ -46,7 +46,7 @@ const Login  = ({navigation}) => {
                     />
                     <Button 
                       mode="contained"
-                      style={styles.entrarBottom}
+                      style={{color: "#fff"}}
                       onPress={(logar) => {
                         navigation.navigate('Home')
                     }}>
