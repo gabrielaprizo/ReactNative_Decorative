@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         width: '100%',
-        backgroundColor: '#FFFAF0',   
+        backgroundColor: '#FAF7C5'   
     },
 
     header: {
@@ -23,16 +23,38 @@ const styles = StyleSheet.create({
         marginHorizontal: '5%'
     },
 
-    text: {
-        fontFamily: 'sans-serif-light',
-        fontSize: 23,
+    favoritosText: {
+        fontFamily: 'sans-serif',
+        fontSize: 20,
         textAlign: 'center',
-        marginLeft: '8%'
+        marginLeft: '18%'
+    },
+
+    decorativeText: {
+        fontFamily: 'sans-serif',
+        fontSize: 20,
+        textAlign: 'center',
+        marginLeft: '4%',
+        color: '#CD853F'
+    },
+
+    subText: {
+        fontFamily: 'sans-serif-light',
+        fontSize: 16,
+        textAlign: 'center'   
+    },
+
+    destaqueText: {
+        fontFamily: 'sans-serif',
+        fontSize: 20,
+        textAlign: 'center',
+        marginLeft: '4%',
+        marginVertical: '5%'
     },
 
     line: {
-        borderBottomColor: '#CD853F',
-        borderBottomWidth: 2,
+        borderBottomColor: '#F5CA46',
+        borderBottomWidth: 2
     }
 });
 export default styles;

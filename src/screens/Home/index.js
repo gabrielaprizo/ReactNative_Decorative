@@ -6,7 +6,6 @@ import styles from './styles';
 
 
 const Home = () => {
-
     const navigation = useNavigation()
 
     return(
@@ -17,41 +16,84 @@ const Home = () => {
             style={styles.image}
             />
             <View style={styles.textContainer}>
-                <Text style={styles.text}>PRODUTOS EM DESTAQUE</Text>
+                <Text style={styles.favoritosText}>FAVORITOS</Text>
+                <Text style={styles.decorativeText}>DECORATIVE</Text>
+            </View>
+            <View>
+                <Text style={styles.subText}> Produtos da coleção Decorative escolhidos a dedo especialmente para você! </Text>
             </View>
         </View>
+
         <View style={styles.line}/>
         <ScrollView>
             <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-                <Products img={{uri: 'https://th.bing.com/th/id/OIP.CtW80KFOHQVifsBKmBH5SAHaFu?pid=ImgDet&rs=1'}}
+                <Products img={require('../../assets/imgs/sofa2.png')}
                 cost="R$3.599,00" onClick={() => navigation.navigate("Detail")}>
                     Sofá 2 lugares
                 </Products>
-                <Products img={{uri: 'https://images.madeiramadeira.com.br/product/images/41071548-mesa-lateral-40cmx40cm-joo-siena-moveis-7899880043091-1_zoom-1500x1500.jpg'}}
-                cost="R$499,00" onClick={() => alert("Testando")}>
-                    Mesa lateral baixa
+                <Products img={require('../../assets/imgs/abajur.png')}
+                cost="R$799,00" onClick={() => alert("Testando")}>
+                    Luminária de chão
                 </Products>
                 </View>
+
                 <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-                <Products img={{uri: 'https://th.bing.com/th/id/OIP.CtW80KFOHQVifsBKmBH5SAHaFu?pid=ImgDet&rs=1'}}
-                cost="R$3.599,00" onClick={() => navigation.navigate("Detail")}>
-                    Sofá 2 lugares
+                <Products img={require('../../assets/imgs/espelho.png')}
+                cost="R$199,00" onClick={() => navigation.navigate("Detail")}>
+                    Espelho oval
                 </Products>
-                <Products img={{uri: 'https://images.madeiramadeira.com.br/product/images/41071548-mesa-lateral-40cmx40cm-joo-siena-moveis-7899880043091-1_zoom-1500x1500.jpg'}}
-                cost="R$499,00" onClick={() => alert("Testando")}>
-                    Mesa lateral baixa
+                <Products img={require('../../assets/imgs/bancoalto2.png')}
+                cost="R$270,00" onClick={() => alert("Testando")}>
+                    Banqueta alta
                 </Products>
                 </View>
+
                 <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-                <Products img={{uri: 'https://www.ideastore.com.br/thumbs/produtos/882banqueta_alta_encosto_palha_azul_02thumb_w800.jpg?0.1.i'}}
-                cost="R$479,00" onClick={() => alert("Testando")}>
-                    Banqueta alta encosto de palha
+                <Products img={require('../../assets/imgs/poltronagiratoria.png')}
+                cost="R$589,00" onClick={() => alert("Testando")}>
+                    Poltrona giratória
                 </Products>
-                <Products img={{uri: 'https://www.ideastore.com.br/thumbs/produtos/882banqueta_alta_encosto_palha_azul_02thumb_w800.jpg?0.1.i'}}
-                cost="R$479,00" onClick={() => alert("Testando")}>
-                    Banqueta alta encosto de palha
+                <Products img={require('../../assets/imgs/cadeira2.png')}
+                cost="R$899,00" onClick={() => alert("Testando")}>
+                    Conjundo de cadeiras
                 </Products>
-                </View>        
+                </View> 
+
+                <Text style={styles.destaqueText}>PRODUTOS EM DESTAQUE</Text>
+                <View style={styles.line}/>
+
+                <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+                <Products img={require('../../assets/imgs/luminaria3.png')}
+                cost="R$789,00" onClick={() => alert("Testando")}>
+                    Luminária com prateleira
+                </Products>
+                <Products img={require('../../assets/imgs/jogojantar.png')}
+                cost="R$3.689,00" onClick={() => alert("Testando")}>
+                    Conjunto para sala de jantar
+                </Products>
+                </View>  
+
+                <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+                <Products img={require('../../assets/imgs/cadeira3.png')}
+                cost="R$1.599,00" onClick={() => alert("Testando")}>
+                    Conjunto mesa com 2 cadeiras
+                </Products>
+                <Products img={require('../../assets/imgs/mesinhalateral.png')}
+                cost="R$479,00" onClick={() => alert("Testando")}>
+                    Mesinha auxiliar lateral
+                </Products>
+                </View>
+
+                <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+                <Products img={require('../../assets/imgs/cadeira1.png')}
+                cost="R$199,00" onClick={() => alert("Testando")}>
+                    Cadeira eiffel
+                </Products>
+                <Products img={require('../../assets/imgs/mesacentro.png')}
+                cost="R$799,00" onClick={() => alert("Testando")}>
+                    Mesa de centro quadrada
+                </Products>
+                </View>
         </ScrollView>
     </View>
     );   
