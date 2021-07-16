@@ -8,38 +8,48 @@ const styles = StyleSheet.create({
         width: '100%',
         alignSelf: 'center',
     },
+
     container: {
         backgroundColor: "#222",
         flex: 1,
         backgroundColor: '#222',
-      },
+    },
+
     bgDark: {
         backgroundColor: '#CD853F',
         flex: 1,
         justifyContent: 'center',
         padding: 20,
     },
+
     logo: {
         alignSelf: "center",
     },
-        marginBottom: {
-            marginBottom: 20,
-        },
-        buttom: {
-            justifyContent: "center",
-            alignItems: "center",
-        },
-        text: {
-            alignSelf: "center",
-            color: "#fff",
-            fontSize: 23,
-        },
-        textSmall: {
-            color: '#fff',
-            textAlign: 'center',
-            marginTop: 0,
-            marginBottom: 50,
-        },
+
+    marginBottom: {
+        marginBottom: 20,
+        marginHorizontal: '8%'
+    },
+
+    buttom: {
+        justifyContent: "center",
+        alignItems: "center",
+        marginHorizontal: '8%',
+        marginVertical: '3%'
+    },
+
+    text: {
+    alignSelf: "center",
+        color: "#fff",
+        fontSize: 23,
+    },
+
+    textSmall: {
+        color: '#fff',
+        textAlign: 'center',
+        marginTop: 0,
+        marginBottom: 50,
+    },
 });
 
 export default styles;

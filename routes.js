@@ -82,16 +82,16 @@ const HomeTabs = () =>{
 const Routes = () => {
     return(
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='Login'>
-                <Stack.Screen 
-                options={{headerShown: false}} 
-                name='Login' 
-                component={Login}/>
-
+            <Stack.Navigator initialRouteName='Home'>
                 <Stack.Screen 
                 options={{headerShown: false}} 
                 name='Home' 
                 component={HomeTabs}/>
+
+                <Stack.Screen 
+                options={{headerShown: false}} 
+                name='Login' 
+                component={Login}/>
                 
                 <Stack.Screen 
                 options={{headerShown: false}} 
@@ -108,7 +108,6 @@ const Routes = () => {
                 name='Produtos' 
                 component={Detail}/>
             </Stack.Navigator>
-        
         </NavigationContainer>
     );
 }

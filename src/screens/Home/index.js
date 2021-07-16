@@ -3,6 +3,7 @@ import {Text, View, ScrollView, Image} from 'react-native';
 import Products from '../../components/Products'
 import { useNavigation } from '@react-navigation/native';
 import styles from './styles';
+import Header from '../../components/Header';
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
 
     return(
     <View style={styles.container}>
+        <Header/>
         <View style={styles.header}>
             <Image
             source={require('../../assets/imgs/capahome.png')}
@@ -35,9 +37,9 @@ const Home = () => {
                 cost="R$799,00" onClick={() => alert("Testando")}>
                     Luminária de chão
                 </Products>
-                </View>
+            </View>
 
-                <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+            <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/espelho.png')}
                 cost="R$199,00" onClick={() => navigation.navigate("Detail")}>
                     Espelho oval
@@ -46,9 +48,9 @@ const Home = () => {
                 cost="R$270,00" onClick={() => alert("Testando")}>
                     Banqueta alta
                 </Products>
-                </View>
+            </View>
 
-                <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+            <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/poltronagiratoria.png')}
                 cost="R$589,00" onClick={() => alert("Testando")}>
                     Poltrona giratória
@@ -57,12 +59,14 @@ const Home = () => {
                 cost="R$899,00" onClick={() => alert("Testando")}>
                     Conjundo de cadeiras
                 </Products>
-                </View> 
-
+            </View> 
+            
+            <View>
                 <Text style={styles.destaqueText}>PRODUTOS EM DESTAQUE</Text>
-                <View style={styles.line}/>
+            </View>
+            <View style={styles.line}/>
 
-                <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+            <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/luminaria3.png')}
                 cost="R$789,00" onClick={() => alert("Testando")}>
                     Luminária com prateleira
@@ -71,9 +75,9 @@ const Home = () => {
                 cost="R$3.689,00" onClick={() => alert("Testando")}>
                     Conjunto para sala de jantar
                 </Products>
-                </View>  
+            </View>  
 
-                <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+            <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/cadeira3.png')}
                 cost="R$1.599,00" onClick={() => alert("Testando")}>
                     Conjunto mesa com 2 cadeiras
@@ -82,9 +86,9 @@ const Home = () => {
                 cost="R$479,00" onClick={() => alert("Testando")}>
                     Mesinha auxiliar lateral
                 </Products>
-                </View>
+            </View>
 
-                <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+            <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/cadeira1.png')}
                 cost="R$199,00" onClick={() => alert("Testando")}>
                     Cadeira eiffel
@@ -93,7 +97,7 @@ const Home = () => {
                 cost="R$799,00" onClick={() => alert("Testando")}>
                     Mesa de centro quadrada
                 </Products>
-                </View>
+            </View>
         </ScrollView>
     </View>
     );   
