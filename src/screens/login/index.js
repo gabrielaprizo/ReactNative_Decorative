@@ -5,6 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextInput, Button } from 'react-native-paper';
 import LinearGradient from 'react-native-linear-gradient';
 
+
 const Login  = ({navigation}) => {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
@@ -46,7 +47,7 @@ const Login  = ({navigation}) => {
                       mode="contained"
                       style={styles.buttom}
                       onPress={(logar) => {
-                        navigation.navigate('Home')
+                        navigation.navigate('Stock')
                     }}>
                         Entrar
                     </Button>
@@ -61,7 +62,6 @@ const Login  = ({navigation}) => {
                     </Text>
                 </View>
         </ScrollView>
-
     )
 };
 

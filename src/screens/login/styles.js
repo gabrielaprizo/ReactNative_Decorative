@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+
     capa: {
         backgroundColor: "#222",
         flex: 1,
@@ -28,18 +29,18 @@ const styles = StyleSheet.create({
 
     marginBottom: {
         marginBottom: 20,
-        marginHorizontal: '8%'
+        marginHorizontal: '5%'
     },
 
     buttom: {
         justifyContent: "center",
         alignItems: "center",
-        marginHorizontal: '8%',
+        marginHorizontal: '5%',
         marginVertical: '3%'
     },
 
     text: {
-    alignSelf: "center",
+        alignSelf: "center",
         color: "#fff",
         fontSize: 23,
     },
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginTop: 0,
         marginBottom: 50,
-    },
+    },     
 });
 
 export default styles;

@@ -34,7 +34,7 @@ const Home = () => {
                     Sofá 2 lugares
                 </Products>
                 <Products img={require('../../assets/imgs/abajur.png')}
-                cost="R$799,00" onClick={() => alert("Testando")}>
+                cost="R$799,00" onClick={() => alert("Uma excelente escolha!")}>
                     Luminária de chão
                 </Products>
             </View>
@@ -52,11 +52,11 @@ const Home = () => {
 
             <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/poltronagiratoria.png')}
-                cost="R$589,00" onClick={() => alert("Testando")}>
+                cost="R$589,00" onClick={() => alert("Uma excelente escolha!")}>
                     Poltrona giratória
                 </Products>
                 <Products img={require('../../assets/imgs/cadeira2.png')}
-                cost="R$899,00" onClick={() => alert("Testando")}>
+                cost="R$899,00" onClick={() => alert("Uma excelente escolha!")}>
                     Conjundo de cadeiras
                 </Products>
             </View> 
@@ -68,34 +68,34 @@ const Home = () => {
 
             <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/luminaria3.png')}
-                cost="R$789,00" onClick={() => alert("Testando")}>
+                cost="R$789,00" onClick={() => alert("Uma excelente escolha!")}>
                     Luminária com prateleira
                 </Products>
                 <Products img={require('../../assets/imgs/jogojantar.png')}
-                cost="R$3.689,00" onClick={() => alert("Testando")}>
-                    Conjunto para sala de jantar
+                cost="R$3.689,00" onClick={() => alert("Uma excelente escolha!")}>
+                    Conjunto Elegance
                 </Products>
             </View>  
 
             <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/cadeira3.png')}
-                cost="R$1.599,00" onClick={() => alert("Testando")}>
-                    Conjunto mesa com 2 cadeiras
+                cost="R$1.599,00" onClick={() => alert("Uma excelente escolha!")}>
+                    Conjunto Life
                 </Products>
                 <Products img={require('../../assets/imgs/mesinhalateral.png')}
-                cost="R$479,00" onClick={() => alert("Testando")}>
+                cost="R$479,00" onClick={() => alert("Uma excelente escolha!")}>
                     Mesinha auxiliar lateral
                 </Products>
             </View>
 
             <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/cadeira1.png')}
-                cost="R$199,00" onClick={() => alert("Testando")}>
+                cost="R$199,00" onClick={() => alert("Uma excelente escolha!")}>
                     Cadeira eiffel
                 </Products>
                 <Products img={require('../../assets/imgs/mesacentro.png')}
-                cost="R$799,00" onClick={() => alert("Testando")}>
-                    Mesa de centro quadrada
+                cost="R$799,00" onClick={() => alert("Uma excelente escolha!")}>
+                    Mesa de centro Flower
                 </Products>
             </View>
         </ScrollView>
