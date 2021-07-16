@@ -55,18 +55,7 @@ const HomeTabs = () =>{
                     <Icon name='email-edit-outline' color={color} size={22} />
                 )
             }}
-            />
-            
-            <Tab.Screen 
-            name='Stock' 
-            component={Stock}
-            options={{
-                tabBarLabel:'Estoque',
-                tabBarIcon: ({color}) => (
-                    <Icon name='account-outline' color={color} size={22} />
-                )
-            }}
-            />
+            />  
         </Tab.Navigator>
     );
 }

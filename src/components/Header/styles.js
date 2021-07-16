@@ -2,9 +2,9 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     text: {
-        color: 'beige',
-        fontSize: 16,
-        fontFamily: 'sans-serif'   
+        color: '#fff',
+        fontSize: 19,
+        fontFamily: 'sans-serif-medium'   
     },
     
     header: {

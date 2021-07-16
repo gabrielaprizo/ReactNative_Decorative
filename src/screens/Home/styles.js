@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         width: '100%',
-        backgroundColor: '#FAF7C5'   
+        backgroundColor: '#FAF5D9'   
     },
 
     header: {
@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
 
     image: {
         width: '100%',
-        height: 200,
-        alignSelf: 'center'
+        height: 100,
+        alignSelf: 'center'   
     },
 
     textContainer: {
@@ -41,7 +41,8 @@ const styles = StyleSheet.create({
     subText: {
         fontFamily: 'sans-serif-light',
         fontSize: 16,
-        textAlign: 'center'   
+        textAlign: 'center',
+        marginBottom: 20         
     },
 
     destaqueText: {
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
     },
 
     line: {
-        borderBottomColor: '#F5CA46',
+        borderBottomColor: '#FABA60',
         borderBottomWidth: 2
     }
 });

@@ -14,19 +14,19 @@ const Home = () => {
         <Header/>
         <View style={styles.header}>
             <Image
-            source={require('../../assets/imgs/capahome.png')}
+            source={require('../../assets/imgs/capahome1.png')}
             style={styles.image}
             />
-            <View style={styles.textContainer}>
-                <Text style={styles.favoritosText}>FAVORITOS</Text>
-                <Text style={styles.decorativeText}>DECORATIVE</Text>
-            </View>
             <View>
-                <Text style={styles.subText}> Produtos da coleção Decorative escolhidos a dedo especialmente para você! </Text>
+            <Image
+            source={require('../../assets/imgs/Decorative-logo-medio-sem-fundo.png')}
+            style={styles.image}
+            />
+            <Text style={styles.subText}> Produtos da coleção Decorative escolhidos a dedo especialmente para você! </Text>
             </View>
         </View>
-
         <View style={styles.line}/>
+
         <ScrollView>
             <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
                 <Products img={require('../../assets/imgs/sofa2.png')}
