@@ -3,7 +3,6 @@ import {Text, View, ScrollView, Image} from 'react-native';
 import Products from '../../components/Products'
 import { useNavigation } from '@react-navigation/native';
 import styles from './styles';
-import Header from '../../components/Header';
 
 
 const Home = () => {
@@ -11,7 +10,7 @@ const Home = () => {
 
     return(
     <View style={styles.container}>
-        <Header/>
+        
         <View style={styles.header}>
             <Image
             source={require('../../assets/imgs/capahome1.png')}

@@ -8,13 +8,14 @@ const styles = StyleSheet.create({
     },
 
     header: {
-        marginBottom:8
+        marginBottom: 8
     },
 
     image: {
         width: '100%',
         height: 100,
-        alignSelf: 'center'   
+        alignSelf: 'center',
+        marginBottom: 20   
     },
 
     textContainer: {

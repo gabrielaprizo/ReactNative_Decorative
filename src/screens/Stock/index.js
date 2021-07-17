@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import Header from '../../components/Header';
 
 const Stock = () => {
     return (
         <View>
-            <Text style={{marginTop: 60, fontSize: 26}}>Página da lista de produtos com a API aqui! :)</Text>
+            <Header/>  
         </View>
     );
 }
