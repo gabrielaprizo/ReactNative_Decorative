@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
         zIndex: 999,
         marginBottom:8,
         marginLeft: 330,
-        marginTop:200
+        marginTop:400
     },
 
     headerSafeAreaView: {

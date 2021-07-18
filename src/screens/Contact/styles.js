@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         color: '#222',
         fontFamily: 'sans-serif',
         fontSize: 25,
-        textAlign: 'center',
+        textAlign: 'center'
     },
     
     textSubTitle: {

@@ -47,8 +47,7 @@ const Login  = ({navigation}) => {
                       mode="contained"
                       style={styles.buttom}
                       onPress={(logar) => {
-                        navigation.navigate('Stock')
-                    }}>
+                        navigation.navigate('Stock')}}>
                         Entrar
                     </Button>
                     <Button 
@@ -64,5 +63,4 @@ const Login  = ({navigation}) => {
         </ScrollView>
     )
 };
-
 export default Login;

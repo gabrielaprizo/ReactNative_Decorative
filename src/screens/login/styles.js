@@ -7,13 +7,13 @@ const styles = StyleSheet.create({
         flex: 1,
         height: 400,
         width: '100%',
-        alignSelf: 'center',
+        alignSelf: 'center'
     },
 
     container: {
         backgroundColor: "#222",
         flex: 1,
-        backgroundColor: '#222',
+        backgroundColor: '#222'
     },
 
     bgDark: {
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     },
 
     logo: {
-        alignSelf: "center",
+        alignSelf: "center"
     },
 
     marginBottom: {
@@ -42,15 +42,14 @@ const styles = StyleSheet.create({
     text: {
         alignSelf: "center",
         color: "#fff",
-        fontSize: 23,
+        fontSize: 23
     },
 
     textSmall: {
         color: '#fff',
         textAlign: 'center',
         marginTop: 0,
-        marginBottom: 50,
-    },     
+        marginBottom: 50
+    }    
 });
-
 export default styles;

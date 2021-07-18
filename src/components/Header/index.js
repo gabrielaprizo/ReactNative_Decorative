@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <LinearGradient style={styles.header} colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0)']}>
             <View>
-                <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+                <TouchableOpacity onPress={() => navigation.navigate('Contact')}>
                     <Text style= {styles.text} >Sair</Text>
                 </TouchableOpacity>
             </View>

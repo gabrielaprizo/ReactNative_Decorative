@@ -65,9 +65,8 @@ const Routes = () => {
                 options={{headerShown: false}} 
                 name='Home' 
                 component={HomeTabs}/>
-         
+
                 <Stack.Screen 
-                options={{headerShown: false}} 
                 name='Detail' 
                 component={Detail}/>
                 

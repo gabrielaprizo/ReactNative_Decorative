@@ -10,7 +10,6 @@ const Contact = () => {
     const onStateChange = ({ open }) => setState({ open });
     const { open } = state;
 
-  
     return (
         <ScrollView>
             <View style={styles.container}>

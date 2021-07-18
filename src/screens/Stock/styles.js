@@ -5,20 +5,22 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         width: '100%',
-        backgroundColor: '#FAF5D9'   
+        backgroundColor: '#EBB75F'   
     },
 
     image: {
         width: '100%',
-        height: 100,
+        height: 400,
         alignSelf: 'center',
         marginBottom: 20   
     },
 
     text: {
         color: '#000',
-        fontSize: 18,
-        fontFamily: 'sans-serif-medium'   
+        fontSize: 23,
+        fontFamily: 'sans-serif-medium',
+        marginHorizontal: '8%',
+        marginVertical: '15%'   
     },
     
     header: {
@@ -30,5 +32,4 @@ const styles = StyleSheet.create({
         marginTop:300
     }   
 });
-
 export default styles;
